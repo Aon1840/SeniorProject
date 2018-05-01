@@ -14,7 +14,7 @@ from Users.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        field = ('user_id','username','password','name','surname','tel','email','register_date');
+        fields = ('user_id','username','password','name','surname','tel','email','register_date');
 
     def create(self, validated_data): #method for create and return new 'User' instance
 

@@ -25,7 +25,7 @@ SECRET_KEY = 's8z(#hzjy^lo$llny%+j=)+tzg%+=!-7q9t@j6w9fmgeig^%5y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.251.7.40']
 
 
 # Application definition
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'SeniorProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Parka_System',
+        'USER': 'root',
+        'PASSWORD': 'Peungsook1840%',
+        'HOST': '13.251.65.193',
+        'PORT': '3306',
     }
 }
 

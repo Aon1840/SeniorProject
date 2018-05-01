@@ -9,7 +9,7 @@ class UserSerializer(serializers.Serializer):
     surname = serializers.CharField(required=True,allow_blank=False,max_length=30)
     tel = serializers.CharField(required=True,allow_blank=False,max_length=10)
     email = serializers.EmailField(required=True,allow_blank=False)
-    register_date = serializers.DateTimeField()
+    register_date = serializers.DateTimeField(read_only=True)
 
 # class UserSerializer(serializers.ModelSerializer):
 #     class Meta:

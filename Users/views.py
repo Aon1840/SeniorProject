@@ -5,6 +5,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from Users.models import User
 from Users.serializers import UserSerializer
+import json
 # Create your views here.
 
 @csrf_exempt
@@ -51,6 +52,27 @@ def getUserDetail(request,pk):
     elif request.method == 'DELETE':
         user.delete()
         return HttpResponse(status=204)
+
+def ShowAllUser(request):
+    ul = User.objects.filter()
+    Alluser = []
+    for us in ul :
+        Alluser.append({
+            "user_id" : us.user_id,
+            "username" : us.username,
+            "password" : us.password,
+            "name" : us.name,
+            "surname" : us.surname,
+            "tel" : us.tel,
+            "email" : us.email,
+            "register_date" : us.register_date
+        })
+
+        context = {
+            'obj' : Alluser
+        }
+
+    return HttpResponse(json.dumps(context),content_type="application/json")
 
 
 

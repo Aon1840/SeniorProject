@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="440ec942-de15-454a-939c-2f87fc6898d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/SeniorProject/settings.py" afterPath="$PROJECT_DIR$/SeniorProject/settings.py" />
-      <change beforePath="$PROJECT_DIR$/Users/models.py" afterPath="$PROJECT_DIR$/Users/models.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Users/serializers.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,17 +24,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Users/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Users/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/Users/models.py" />
         <option value="$PROJECT_DIR$/SeniorProject/settings.py" />
+        <option value="$PROJECT_DIR$/Users/serializers.py" />
       </list>
     </option>
   </component>
@@ -75,6 +95,11 @@
             <path>
               <item name="SeniorProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="SeniorProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeniorProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeniorProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,8 +181,18 @@
     <entry file="file://$PROJECT_DIR$/Users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

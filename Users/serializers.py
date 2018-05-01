@@ -1,20 +1,20 @@
 from rest_framework import serializers
 from Users.models import User
 
-# class UserSerializer(serializers.Serializer):
-#     user_id = serializers.IntegerField(read_only=True)
-#     username = serializers.CharField(required=True,allow_blank=False,max_length=15)
-#     password = serializers.CharField(required=True,allow_blank=False,max_length=20)
-#     name = serializers.CharField(required=True,allow_blank=False,max_length=30)
-#     surname = serializers.CharField(required=True,allow_blank=False,max_length=30)
-#     tel = serializers.CharField(required=True,allow_blank=False,max_length=10)
-#     email = serializers.EmailField(required=True,allow_blank=False)
-#     register_date = serializers.DateTimeField()
+class UserSerializer(serializers.Serializer):
+    user_id = serializers.IntegerField(read_only=True)
+    username = serializers.CharField(required=True,allow_blank=False,max_length=15)
+    password = serializers.CharField(required=True,allow_blank=False,max_length=20)
+    name = serializers.CharField(required=True,allow_blank=False,max_length=30)
+    surname = serializers.CharField(required=True,allow_blank=False,max_length=30)
+    tel = serializers.CharField(required=True,allow_blank=False,max_length=10)
+    email = serializers.EmailField(required=True,allow_blank=False)
+    register_date = serializers.DateTimeField()
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('user_id','username','password','name','surname','tel','email','register_date');
+# class UserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = User
+#         fields = ('user_id','username','password','name','surname','tel','email','register_date')
 
     def create(self, validated_data): #method for create and return new 'User' instance
 

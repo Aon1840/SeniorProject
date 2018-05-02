@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^',include('Users.urls')),
     url(r'^test/$', views.ShowAllUser),
+    url(r'^', include('snippets.urls')),
 ]

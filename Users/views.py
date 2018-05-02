@@ -12,19 +12,18 @@ import json
 def getAllUser(request):
     #method for list all users
 
-    if request == 'GET':
+    if request.method == 'GET':
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)
-
         return JsonResponse(serializer.data,self=False)
 
-    elif request == 'POST':
+    elif request.method == 'POST':
         data = JSONParser().parse(request)
         serializer = UserSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.erroes, statuss=400)
+        return JsonResponse(serializer.errors, status=400)
 
 
 @csrf_exempt

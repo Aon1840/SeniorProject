@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'Users',
     'snippets.apps.SnippetsConfig',
+    'CarPositions',
 ]
 
 MIDDLEWARE = [
@@ -85,8 +86,8 @@ DATABASES = {
         # 'PASSWORD': 'Peungsook1840%',
         # 'HOST': '13.251.65.193',
         'PASSWORD' : '',
-        'HOST' : 'localhost',
-        'PORT': '3306',
+        'HOST' : '127.0.0.1',
+        # 'PORT': '3306',
     }
 }
 

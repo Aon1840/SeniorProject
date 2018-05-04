@@ -82,8 +82,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Parka_System',
         'USER': 'root',
-        'PASSWORD': 'Peungsook1840%',
-        'HOST': '13.251.65.193',
+        # 'PASSWORD': 'Peungsook1840%',
+        # 'HOST': '13.251.65.193',
+        'PASSWORD' : '',
+        'HOST' : 'localhost',
         'PORT': '3306',
     }
 }

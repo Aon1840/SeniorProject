@@ -25,8 +25,8 @@ SECRET_KEY = 's8z(#hzjy^lo$llny%+j=)+tzg%+=!-7q9t@j6w9fmgeig^%5y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['13.251.7.40']
-ALLOWED_HOSTS = ['192.168.1.40']
+ALLOWED_HOSTS = ['13.251.7.40']
+# ALLOWED_HOSTS = ['192.168.1.40']
 
 
 # Application definition
@@ -83,11 +83,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Parka_System',
         'USER': 'root',
-        # 'PASSWORD': 'Peungsook1840%',
-        # 'HOST': '13.251.65.193',
-        'PASSWORD' : '',
-        'HOST' : '127.0.0.1',
-        # 'PORT': '3306',
+        'PASSWORD': 'Peungsook1840%',
+        'HOST': '13.251.65.193',
+        # 'PASSWORD' : '',
+        # 'HOST' : '127.0.0.1',
+        'PORT': '3306',
     }
 }
 

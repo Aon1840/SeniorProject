@@ -53,6 +53,16 @@ def getUserDetail(request,pk):
         user.delete()
         return HttpResponse(status=204)
 
+@csrf_exempt
+def AddNewUser(request):
+    if request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = UserSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=201)
+        return JsonResponse(serializer.errors, status=400)
+
 
 
 
